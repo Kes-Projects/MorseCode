@@ -64,7 +64,6 @@ def decrypt():
                 letters = word.split(' ')
                 decrypted_word = ''.join(reverse_morse_code_dict[letter] for letter in letters)
                 decrypted_text.append(decrypted_word)
-                print(decrypted_text)
             display_text.config(state=NORMAL)
             display_text.delete("1.0", END)
             display_text.tag_add("center", "1.0", "end")
